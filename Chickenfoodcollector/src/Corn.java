@@ -46,8 +46,6 @@ class Corn {
             // Tiny tip at bottom
         g.setColor(new Color(200, 145, 15));
         g.fillOval(x + 10, y + 37, 5, 4);
-
         }
-        
     }
 }

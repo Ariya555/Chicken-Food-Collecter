@@ -3,9 +3,18 @@ import java.awt.*;
 public class Chicken {
 
     int x = 100;
-    int y = 100;
+    int y = 250;
+    boolean facingRight = true;
 
     public void draw(Graphics g) {
+
+        Graphics2D g2 = (Graphics2D) g;
+
+        // Flip the whole chicken horizontally when facing left
+        if (!facingRight) {
+            g2.translate(2 * x + 100, 0);
+            g2.scale(-1, 1);
+        }
 
         // Body
         g.setColor(new Color(245, 166, 70));
@@ -43,8 +52,15 @@ public class Chicken {
         g.setColor(new Color(235, 145, 40));
         g.fillOval(x + 23, y + 88, 20, 7);
         g.fillOval(x + 53, y + 88, 20, 7);
+
+        // Reset graphics transformation
+        if (!facingRight) {
+            g2.scale(-1, 1);
+            g2.translate(-(2 * x + 100), 0);
+        }
     }
-// Movement
+
+    // Movement
     public void move(int dx, int dy, int width, int height) {
 
         x += dx;
