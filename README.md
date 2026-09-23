@@ -57,19 +57,28 @@ Focus execution controls on the active window panel to begin playing.
 🎮 Controls
 
 Key                  Action
+
 ↑ (Up Arrow)         Move Chicken Up
+
 ↓ (Down Arrow)       Move Chicken Down
+
 ← (Left Arrow)       Move Chicken Left (Flips character view left)
+
 → (Right Arrow)      Move Chicken Right (Flips character view right)
+
 R                    Restart Game at any time
 
 
 📁 Project Structure
 
 src/
+
 └── Chickenfoodcollector/
+
 ├── chickenfoodcollector.java (Contains main class, GameFrame, and GamePanel)
+
 ├── Chicken.java
+
 └── Corn.java
 
 Main Classes
@@ -88,8 +97,11 @@ Collision evaluation is evaluated custom-frame via pixel boundaries inside GameP
 java
 
 if (beakX < cornX + cornWidth &&
+
     beakX + beakWidth > cornX &&
+    
     beakY < cornY + cornHeight &&
+    
     beakY + beakHeight > cornY)
     
 Use code with caution.
