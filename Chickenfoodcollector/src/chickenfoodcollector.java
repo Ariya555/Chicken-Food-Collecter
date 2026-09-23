@@ -21,13 +21,24 @@ class GamePanel extends JPanel implements KeyListener {
     GamePanel() {
 
         setPreferredSize(new Dimension(WIDTH, HEIGHT));
-        setBackground(Color.WHITE);
+        setBackground(Color.PINK);
 
         chicken = new Chicken();
         corn = new Corn(400, 300);
 
         setFocusable(true);
         addKeyListener(this);
+    }
+    // --- RESTART GAME METHOD ---
+    void restartGame() {
+        score = 0;
+        gameWon = false;
+        chicken.x = 100;
+        chicken.y = 100;
+        chicken.facingRight = true;
+        corn.x = 400;
+        corn.y = 300;
+        repaint();
     }
 
     void generateCorn() {
@@ -43,16 +54,6 @@ class GamePanel extends JPanel implements KeyListener {
             return;
         }
 
-        /*
-         * Chicken beak:
-         *
-         * Facing right:
-         * x + 98 to x + 112
-         *
-         * Facing left:
-         * x - 12 to x
-         */
-
         int beakX;
         int beakY = chicken.y + 17;
 
@@ -64,13 +65,6 @@ class GamePanel extends JPanel implements KeyListener {
         } else {
             beakX = chicken.x - 12;
         }
-
-        /*
-         * Corn is drawn approximately from:
-         *
-         * x - 2 to x + 28
-         * y to y + 43
-         */
 
         int cornX = corn.x - 2;
         int cornY = corn.y;
@@ -140,6 +134,12 @@ protected void paintComponent(Graphics g) {
 
     @Override
     public void keyPressed(KeyEvent e) {
+        // Listening for 'R' key to restart at any time
+        if (e.getKeyCode() == KeyEvent.VK_R) {
+            restartGame();
+            return;
+        }
+
 
         if (gameWon) {
             return;
