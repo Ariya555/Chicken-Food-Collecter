@@ -2,37 +2,57 @@
 
 A simple 2D arcade-style collection game developed in Java Swing as a university project. The player controls a chicken character, navigates around a fixed screen area to collect randomly spawning corn cobs, increases their score, and aims to achieve a winning condition.
 
+
 🎮Features
 
 Player Movement: Full 2D navigation using the keyboard arrow keys.
+
 Dynamic Sprite Flipping: Automatic tracking of horizontal direction, flipping the chicken character to face left or right based on movement inputs.
+
 Procedural Spawning: Random target item positioning fully managed within the frame's structural boundaries.
+
 Beak-to-Target Collision: Precise bounding box intersect evaluation focused around the coordinates of the chicken's beak and the corn cob asset.
+
 On-Screen Dashboard: Clean visual overlay showing live text strings tracking the player's progression score.
+
 Win Condition Mechanism: Event listener that flags a completion state immediately upon satisfying requirements.
+
 Instant Session Reset: One-touch baseline restoration mechanism to wipe and re-initialize scores and positions.
 
 🛠 Technologies
 
 Java Core
+
 Java Swing
+
 Java AWT & Graphics2D
+
 Random Geometry Coordinates
+
 
 💻 Requirements
 
 JDK 17 or newer
+
 Any Java Integrated Development Environment (IDE) like IntelliJ IDEA, NetBeans, or Eclipse
+
 
 🚀 How to Run
 
 Clone the repository:
+
 https://github.com/Ariya555/Chicken-Food-Collecter
+
 Use code with caution.
+
 Open the project inside your preferred Java IDE (such as NetBeans, VS Code, or IntelliJ).
+
 Locate the file chickenfoodcollector.java.
+
 Run the standard main() method to start the game.
+
 Focus execution controls on the active window panel to begin playing.
+
 
 🎮 Controls
 
@@ -42,6 +62,7 @@ Key                  Action
 ← (Left Arrow)       Move Chicken Left (Flips character view left)
 → (Right Arrow)      Move Chicken Right (Flips character view right)
 R                    Restart Game at any time
+
 
 📁 Project Structure
 
@@ -54,18 +75,25 @@ src/
 Main Classes
 
 chickenfoodcollector.java: Acts as the system manager. Sets window frameworks (GameFrame) and executes rendering, text layouts, input mapping, and logic loops inside GamePanel.
+
 Chicken.java: Dictates vector styling models, bounding limitations, orientation toggles, and drawing procedures for the player asset.
+
 Corn.java: Manages structural shape coordinate calculations and drawing procedures for the objective item.
+
 
 💥 Collision Detection
 
 Collision evaluation is evaluated custom-frame via pixel boundaries inside GamePanel.java. Rather than checking the entire character box, it narrows calculation down to coordinates matching the beak:
+
 java
+
 if (beakX < cornX + cornWidth &&
     beakX + beakWidth > cornX &&
     beakY < cornY + cornHeight &&
     beakY + beakHeight > cornY)
+    
 Use code with caution.
+
 
 📅 Weekly Development
 
@@ -119,20 +147,30 @@ Verified performance, constraints, and operational functions.
 Cleaned minor software bugs and logic defects.
 Captured gameplay screenshots and compiled presentation reports.
 
+
 🏆 Game Rules
 
 Target Goal: Collect 10 corn items to achieve victory.
+
 Score Progression: Each successful corn touch awards +1 point.
+
 Respawn Loop: Collecting an active corn item automatically moves it to a new random location.
+
 Win Trigger: Reaching 10 points stops gameplay loop tracking and displays the "YOU WIN!" message.
+
 Session Reset: Pressing R clears data values back to zero instantly.
+
 
 🔮 Future Improvements
 
 Graphical Upgrades: Integrating external asset image sheets (PNG) instead of manual geometry shapes.
+
 Audio Elements: Adding audio playback engines for movement cues, scoring pings, and completion tracks.
+
 Obstacle Entities: Deploying moving hazards that lower score counters or impede character travel paths.
+
 Progression Systems: Introducing multiple levels with varying collection speeds and point objectives.
+
 
 Menu Layers: Incorporating introductory front-ends and pause menu states.
 👨‍💻 Project InformationProject: Chicken Food Collector [1]Language: JavaGUI Layout: Java Swing / AWTType: University ProjectStatus: Completed
