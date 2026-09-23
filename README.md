@@ -1,4 +1,4 @@
-# #**🐔 Chicken Food Collector**
+# # **🐔 Chicken Food Collector**
 
 A simple 2D arcade-style collection game developed in Java Swing as a university project. The player controls a chicken character, navigates around a fixed screen area to collect randomly spawning corn cobs, increases their score, and aims to achieve a winning condition.
 
