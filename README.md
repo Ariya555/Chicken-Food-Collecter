@@ -3,7 +3,7 @@
 A simple 2D arcade-style collection game developed in Java Swing as a university project. The player controls a chicken character, navigates around a fixed screen area to collect randomly spawning corn cobs, increases their score, and aims to achieve a winning condition.
 
 
-##**🎮Features**
+# **🎮Features**
 
 1.Player Movement: Full 2D navigation using the keyboard arrow keys.
 
@@ -19,7 +19,7 @@ A simple 2D arcade-style collection game developed in Java Swing as a university
 
 7.Instant Session Reset: One-touch baseline restoration mechanism to wipe and re-initialize scores and positions.
 
-##**🛠 Technologies**
+# **🛠 Technologies**
 
 -Java Core
 
@@ -30,14 +30,14 @@ A simple 2D arcade-style collection game developed in Java Swing as a university
 -Random Geometry Coordinates
 
 
-##**💻 Requirements**
+# **💻 Requirements**
 
 1.JDK 17 or newer
 
 2.Any Java Integrated Development Environment (IDE) like IntelliJ IDEA, NetBeans, or Eclipse
 
 
-##**🚀 How to Run**
+# **🚀 How to Run**
 
 1.Clone the repository:
 
@@ -52,7 +52,7 @@ https://github.com/Ariya555/Chicken-Food-Collecter
 5.Focus execution controls on the active window panel to begin playing.
 
 
- ##**🎮 Controls**
+ # **🎮 Controls**
 
 | Key | Action |
 |-----|--------|
@@ -63,7 +63,7 @@ https://github.com/Ariya555/Chicken-Food-Collecter
 | R | Restart Game |
 
 
-##**📁 Project Structure**
+# **📁 Project Structure**
 
 src/
 
@@ -75,7 +75,7 @@ src/
 
 └── Corn.java
 
-##**Main Classes**
+# **Main Classes**
 
 1.chickenfoodcollector.java: Acts as the system manager. Sets window frameworks (GameFrame) and executes rendering, text layouts, input mapping, and logic loops inside GamePanel.
 
@@ -84,7 +84,7 @@ src/
 3.Corn.java: Manages structural shape coordinate calculations and drawing procedures for the objective item.
 
 
-##**💥 Collision Detection**
+# **💥 Collision Detection**
 
 Collision evaluation is evaluated custom-frame via pixel boundaries inside 
 
@@ -103,87 +103,85 @@ if (beakX < cornX + cornWidth &&
     beakY + beakHeight > cornY)
     
 
-##**📅 Weekly Development**
+# **📅 Weekly Development**
 
--Week 1 — Project Planning & Research
+Week 1 — Project Planning & Research
 Selected Chicken Food Collector Game idea.
 Defined project objectives and understood game requirements.
 Created a 10-week development timeline structure.
 
--Week 2 — Game Design & Flowchart
+Week 2 — Game Design & Flowchart
 Designed game layout parameters.
 Decided chicken and corn coordinate position scales.
 Created the application logic flowchart and prepared foundational mechanics.
 
--Week 3 — Project Setup & GUI
+Week 3 — Project Setup & GUI
 Initialized the Java project repository structure.
 Rendered the primary game frame container window.
 Split classes into distinct project files and tested execution baselines.
 
--Week 4 — Chicken Character Development
+Week 4 — Chicken Character Development
 Coded vector geometry elements creating the chicken's body, comb, and legs.
 Anchored standard starting position offsets.
 Tested scaling and asset display properties on screen.
 
--Week 5 — Chicken Movement
+Week 5 — Chicken Movement
 Integrated keyboard bindings using KeyListener interfaces.
 Linked arrow input actions to translation formulas.
 Added boundaries to stop the chicken from sliding out of bounds.
 
--Week 6 — Corn Generation
+Week 6 — Corn Generation
 Coded individual husk leaf polygons and row-by-row kernel drawing loops.
 Generated target tracking shapes onto the drawing context array.
 Established relative initialization position defaults.
 
--Week 7 — Corn Collection & Score
+Week 7 — Corn Collection & Score
 Coded collision detection between the chicken's beak and the corn's boundaries.
 Scripted score value trackers that increment after collection.
 Programmed text rendering engines to print data blocks onto the layout.
 
--Week 8 — Random Corn Placement
+Week 8 — Random Corn Placement
 Implemented random coordination formulas to spawn corn within boundary frameworks.
 Configured logic patterns to loop and update values sequentially.
 Cleaned game functionality routines.
 
--Week 9 — Winning Condition
+Week 9 — Winning Condition
 Set fixed validation conditions to lock win triggers at 10 points.
 Developed custom victory screen components displaying completion text.
 Completed core logical loop mechanics.
 
--Week 10 — Testing & Documentation
+Week 10 — Testing & Documentation
 Verified performance, constraints, and operational functions.
 Cleaned minor software bugs and logic defects.
 Captured gameplay screenshots and compiled presentation reports.
 
 
-##**🏆 Game Rules**
+# **🏆 Game Rules**
 
--Target Goal: Collect 10 corn items to achieve victory.
+- Target Goal: Collect 10 corn items to achieve victory.
 
--Score Progression: Each successful corn touch awards +1 point.
+- Score Progression: Each successful corn touch awards +1 point.
 
--Respawn Loop: Collecting an active corn item automatically moves it to a new random location.
+- Respawn Loop: Collecting an active corn item automatically moves it to a new random location.
 
--Win Trigger: Reaching 10 points stops gameplay loop tracking and displays the "YOU WIN!" message.
+- Win Trigger: Reaching 10 points stops gameplay loop tracking and displays the "YOU WIN!" message.
 
--Session Reset: Pressing R clears data values back to zero instantly.
-
-
-##**🔮 Future Improvements**
-
--Graphical Upgrades: Integrating external asset image sheets (PNG) instead of manual geometry shapes.
-
--Audio Elements: Adding audio playback engines for movement cues, scoring pings, and completion tracks.
-
--Obstacle Entities: Deploying moving hazards that lower score counters or impede character travel paths.
-
--Progression Systems: Introducing multiple levels with varying collection speeds and point objectives.
+- Session Reset: Pressing R clears data values back to zero instantly.
 
 
--Menu Layers: Incorporating introductory front-ends and pause menu states.
+# **🔮 Future Improvements**
+
+- Graphical Upgrades: Integrating external asset image sheets (PNG) instead of manual geometry shapes.
+- Audio Elements: Adding audio playback engines for movement cues, scoring pings, and completion tracks.
+
+- Obstacle Entities: Deploying moving hazards that lower score counters or impede character travel paths.
+
+- Progression Systems: Introducing multiple levels with varying collection speeds and point objectives.
+
+- Menu Layers: Incorporating introductory front-ends and pause menu states.
 
 
-##**👨‍💻 Project Information**
+# **👨‍💻 Project Information**
 
 Project: Chicken Food Collector 
 
