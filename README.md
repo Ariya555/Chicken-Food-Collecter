@@ -56,20 +56,15 @@ Focus execution controls on the active window panel to begin playing.
 
 🎮 Controls
 
-Key                                                                            Action
+ 🎮 Controls
 
-↑ (Up Arrow)                                                                   Move Chicken Up
-
-↓ (Down Arrow)                                                                 Move Chicken Down
-
-← (Left Arrow)                                                                 Move Chicken Left (Flips character view left)
-
-→ (Right Arrow)                                                                Move Chicken Right (Flips character view right)
-
-R                                                                              Restart Game at any time
-
-
-📁 Project Structure
+| Key | Action |
+|-----|--------|
+| ↑ | Move Chicken Up |
+| ↓ | Move Chicken Down |
+| ← | Move Chicken Left |
+| → | Move Chicken Right |
+| R | Restart Game |
 
 src/
 
