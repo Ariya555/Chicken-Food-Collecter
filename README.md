@@ -54,8 +54,6 @@ Run the standard main() method to start the game.
 Focus execution controls on the active window panel to begin playing.
 
 
-🎮 Controls
-
  🎮 Controls
 
 | Key | Action |
