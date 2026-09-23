@@ -64,6 +64,9 @@ Focus execution controls on the active window panel to begin playing.
 | → | Move Chicken Right |
 | R | Restart Game |
 
+
+📁 Project Structure
+
 src/
 
 └── Chickenfoodcollector/
