@@ -173,4 +173,5 @@ Progression Systems: Introducing multiple levels with varying collection speeds 
 
 
 Menu Layers: Incorporating introductory front-ends and pause menu states.
+
 👨‍💻 Project InformationProject: Chicken Food Collector [1]Language: JavaGUI Layout: Java Swing / AWTType: University ProjectStatus: Completed
